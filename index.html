@@ -371,6 +371,7 @@
             display: flex;
             align-items: center;
             gap: 15px;
+            text-align: left;
         }
 
         .contact-detail i {
@@ -389,6 +390,7 @@
             flex-direction: column;
             justify-content: center;
         }
+
         .contact-form input,
         .contact-form textarea {
             width: 100%;
@@ -495,6 +497,19 @@
 
             .projects-grid {
                 grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-detail {
+                align-items: center;
+            }
+
+            .contact-detail div {
+                align-items: flex-start;
             }
         }
     </style>
